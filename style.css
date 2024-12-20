@@ -1,0 +1,131 @@
+/* Reset các style mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Đặt video nền */
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1; /* Đặt video ở phía sau nội dung */
+}
+
+#bg-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cấu trúc chung của trang */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #111;
+}
+
+/* Header */
+.header {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #e8491d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+/* Giới thiệu kênh */
+.about {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Video */
+.videos {
+    padding: 80px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.video-item {
+    margin-bottom: 40px;
+}
+
+.video-item iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.video-item h3 {
+    margin-top: 10px;
+    font-size: 1.8em;
+}
+
+.video-item p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Liên kết TikTok */
+.contact {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #111;
+}
+
+.contact a {
+    padding: 15px 30px;
+    background-color: #e8491d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Thêm hiệu ứng cuộn cho trang dài */
+section {
+    margin-bottom: 100px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .video-item iframe {
+        width: 100%;
+    }
+}
